@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Video Unlocker",
+  "description": "This extension enables the user to watch youtube videos without sign-in",
+  "version": "1.0",
+  "background": { "scripts": ["unlock_video.js"] },
+  "browser_action": {
+      "name": "Click to see the video"
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "https://ajax.googleapis.com/"
+  ]
+}
